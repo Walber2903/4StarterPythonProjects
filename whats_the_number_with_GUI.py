@@ -25,9 +25,10 @@ class WhatsTheNumber:
       while True:
         # Ready the input values from screen
         self.event, self.values = self.window.Read()
-        # Make something with the values
+        #click to close the program when you want
         if self.event == sg.WIN_CLOSED:
           break
+        # Make something with the values
         if self.event == 'Hit!':
           self.number_tried = self.values['hit_value']
           while self.try_again == True:
